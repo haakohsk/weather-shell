@@ -3,6 +3,7 @@
 
 ## 👨🏼‍💻 Download
 - To download the program, clone the project with HTTPS
+
 ```git clone https://github.com/haakohsk/weather-shell.git```
 
 ## 📌 Dependencies
