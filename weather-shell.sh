@@ -4,7 +4,7 @@
 now=$(date);
 
 # Keys
-positionstack_api_key=YOUR_API_KEY
+positionstack_api_key=0879fbc3773607fe1440b8ab2f802983
 
 # Fetch user location(PENDING)
 
@@ -23,9 +23,11 @@ if [ $# -eq 1 ]
 
     #http://api.positionstack.com/v1/forward?        access_key=0879fbc3773607fe1440b8ab2f802983&query=Trondheim
      # Handle JSON data with JQ
-     coords_placename=$(echo $forecastJSON | jq -r ".data[0].latitude")
-     echo $coords_placename
+     # coords_placename=$(echo $forecastJSON | jq -r ".data[].continent")
 
+     oords_placename=$(echo $forecastJSON | jq -r '.data[] | {latitude}' )
+     echo $coords_placename
+# jq '.results[] | {name, age}'
 fi
 
 # Fetch weatherforecast from API
@@ -42,10 +44,10 @@ if [ $# -eq 0 ]
 
 # Print weather info
 echo ------------------------------------------;
-echo "Today is: $now";
+say "Today is: $now";
 echo --- Weather at the moment ---;
-echo Temperature in celsius:;
-echo $forecastJSON | jq -r '.properties.timeseries[0].data.instant.details.air_temperature';
+say Temperature in celsius:;
+say $forecastJSON | jq -r '.properties.timeseries[0].data.instant.details.air_temperature';
 echo Wind speed in m/s:;
 echo $forecastJSON | jq -r '.properties.timeseries[0].data.instant.details.wind_speed';
 
