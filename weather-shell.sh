@@ -4,7 +4,7 @@
 now=$(date);
 
 # Keys
-positionstack_api_key="YOUR_API_KEY"
+positionstack_api_key="689d198a16743e8dce064cdad078e2dc"
 
 # Function that prints weather to stdout, takes in JSON data
 function printWeather {
