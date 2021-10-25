@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Loading info 
+ echo "Fetching data"
+ echo -ne '#####                     (33%)\r'
+ sleep 0.6
+ echo -ne '#############             (66%)\r'
+ sleep 0.6
+ echo -ne '#######################   (100%)\r'
+ echo -ne '\n'
+
 # Global variables
 now=$(date);
 
