@@ -17,5 +17,5 @@
 
 ## 🤖 Make script run for every new shell
 - Paste the following into ~/.bashrc:
-```~/path/to/script/./weather-shell.sh *"your_city_name"*```
+```~/path/to/script/./weather-shell.sh "YOUR_CITY"```
 - Note if you are using another shell, for instance oh my zsh, the file would be ~/.zshrc
