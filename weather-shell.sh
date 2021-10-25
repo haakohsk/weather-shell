@@ -4,7 +4,7 @@
 now=$(date);
 
 # Keys
-positionstack_api_key=0879fbc3773607fe1440b8ab2f802983
+positionstack_api_key="YOUR_API_KEY"
 
 # Fetch user location(PENDING)
 
