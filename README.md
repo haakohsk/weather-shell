@@ -7,6 +7,7 @@
 ```git clone https://github.com/haakohsk/weather-shell.git```
 
 ## 📌 Dependencies
+- [Positionstack](https://positionstack.com/signup/free) generate a free, private API key. Set it to the variable _positionstack_api_key_.
 - [JQ](https://github.com/stedolan/jq) command-line JSON processor
 - Install with brew: 
 ```brew install jq```
