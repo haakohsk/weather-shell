@@ -1,6 +1,17 @@
 #!/bin/bash
 
-# Loading info 
+# Global variables
+now=$(date);
+
+# Keys
+positionstack_api_key="YOUR_API_KEY";
+
+if [[ $positionstack_api_key -eq "YOUR_API_KEY" ]] ; then
+    echo "You need a valid Positionstack API key. See dependencies in README"
+    exit 1
+fi
+
+# Loading info
  echo "Fetching data"
  echo -ne '#####                     (33%)\r'
  sleep 0.6
@@ -8,12 +19,6 @@
  sleep 0.6
  echo -ne '#######################   (100%)\r'
  echo -ne '\n'
-
-# Global variables
-now=$(date);
-
-# Keys
-positionstack_api_key="YOUR_API_KEY";
 
 # Function that prints weather to stdout, takes in JSON data
 function printWeather {
