@@ -4,7 +4,7 @@
 now=$(date);
 
 # Keys
-positionstack_api_key="YOUR_API_KEY";
+positionstack_api_key="YOUR_API_KEY"
 
 if [[ $positionstack_api_key -eq "YOUR_API_KEY" ]] ; then
     echo "You need a valid Positionstack API key. See dependencies in README"
