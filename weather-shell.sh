@@ -3,8 +3,8 @@
 # Global variables
 now=$(date);
 
-# Keys
-positionstack_api_key="YOUR_API_KEY"
+# Keys - Either replace $(cat ~/.env) with "YOUR_API_KEY" or simply add it to ~/.env
+positionstack_api_key=$(cat ~/.env)
 
 if [[ $positionstack_api_key -eq "YOUR_API_KEY" ]] ; then
     echo "You need a valid Positionstack API key. See dependencies in README"
