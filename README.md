@@ -11,6 +11,8 @@
 - [JQ](https://github.com/stedolan/jq) command-line JSON processor
 - Install with brew: 
 ```brew install jq```
+- or with apt:
+```apt install jq```
 
 ## 🏃🏽‍♂️ Run script
 - Give the program execution permissions
