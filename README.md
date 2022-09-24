@@ -1,6 +1,8 @@
 # 🌡 Weather-shell
 - Compact bash script that prints the weather forecast of your current location.
 
+![weather-gif](https://i.imgur.com/tK80VFw.gif)
+
 ## 👨🏼‍💻 Download
 - To download the program, clone the project with HTTPS
 
